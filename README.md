@@ -25,7 +25,7 @@
 | Column             | Type       | Options           |
 | ------------------ | ---------- | ----------------- |
 | name               | text       | null: false       |
-| description_item   | text       | null: false       |
+| description        | text       | null: false       |
 | genre_id           | integer    | null: false       |
 | status_id          | integer    | null: false       |
 | ship_burden_id     | integer    | null: false       |
@@ -58,6 +58,7 @@
 
 - belongs_to :user
 - belongs_to :item
+- has_one :address
 
 ## addressesテーブル
 

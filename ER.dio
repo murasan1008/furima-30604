@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2020-10-17T10:58:43.112Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.49.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="BHWrZN2q5z_PntpYV-bJ" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-10-17T11:35:24.828Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.49.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="OPBF39PnNvlggIJ1f9E0" version="13.6.5">
     <diagram id="OUvmJjjzDV503gWwQ52Z" name="ページ1">
-        <mxGraphModel dx="1686" dy="827" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#F1FAEE" math="0" shadow="1">
+        <mxGraphModel dx="967" dy="721" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#F1FAEE" math="0" shadow="1">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -37,7 +37,7 @@
                 <mxCell id="32" value="name" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontColor=#1D3557;" parent="31" vertex="1">
                     <mxGeometry y="26" width="224" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="description_item" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontColor=#1D3557;" parent="31" vertex="1">
+                <mxCell id="33" value="description" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontColor=#1D3557;" parent="31" vertex="1">
                     <mxGeometry y="56" width="224" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="34" value="genre_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=15;fontColor=#1D3557;" parent="31" vertex="1">
