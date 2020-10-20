@@ -6,4 +6,5 @@ class Item < ApplicationRecord
   belongs_to_active_hash :ship_burden
   belongs_to_active_hash :shipment_source
   belongs_to_active_hash :days_to
+  has_one_attached :image
 end
