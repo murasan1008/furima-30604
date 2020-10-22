@@ -12,7 +12,7 @@ FactoryBot.define do
 
     after(:build) do |i|
       i.image.attach(io: File.open('public/images/furima-intro04.png'),
-        filename: 'furima-intro04.png')
+                     filename: 'furima-intro04.png')
     end
   end
 end
