@@ -12,13 +12,13 @@ class Item < ApplicationRecord
   validates :name,             presence: { message: "入力された文字が空欄です" }
   validates :description,      presence: { message: "入力された文字が空欄です" }
   validates :price,            presence: { message: "入力された文字が空欄です" }
-  with_options presence: { message: "入力された文字が空欄です" }, numericality: { other_than: 1, message: '選択して下さい' } do
-    validates :genre
-    validates :status
-    validates :ship_burden
-    validates :shipment_source
-    validates :days_to
+  with_options numericality: { other_than: 1, message: '選択して下さい' } do
+    validates :genre_id
+    validates :status_id
+    validates :ship_burden_id
+    validates :shipment_source_id
+    validates :days_to_id
   end
-  validates :price, inclusion: { in: 300..9999999, message: '規定価格の範囲内で入力して下さい' },
-    format: { with: /\A[0-9]+\z/, message: '規定価格の範囲内で入力して下さい'}
+  validates :price, format: { with: /\A[0-9]+\z/, message: '半角数字、又は規定価格の範囲内で入力して下さい' }
+  validates :price, inclusion: { in: 300..9999999, message: '半角数字、又は規定価格の範囲内で入力して下さい' }
 end
