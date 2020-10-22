@@ -56,6 +56,11 @@ RSpec.describe Item, type: :model do
       @item.valid?
       expect(@item.errors.full_messages).to include('Price 半角数字、又は規定価格の範囲内で入力して下さい')
     end
+    it '価格の範囲が¥300~¥9999999の範囲でないと保存が出来ない' do
+      @item.price = 10000000
+      @item.valid?
+      expect(@item.errors.full_messages).to include('Price 半角数字、又は規定価格の範囲内で入力して下さい')
+    end
     it '販売価格は半角数字でないと保存が出来ない' do
       @item.price = 'aaa'
       @item.valid?
