@@ -4,10 +4,10 @@ class OrderAddress
                 :ship_building, :phone, :order
 
   with_options presence: { message: '入力された文字が空欄です' } do
-    validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: '半角数字、又は-を付けて入力して下さい'}
+    validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: '半角数字で入力されていないか、-を付けて入力して下さい'}
     validates :ship_city
     validates :ship_block
-    validates :phone, format: {with: /\A\d{11}\z/, message: '半角数字、又は-を付けないで入力して下さい'}
+    validates :phone, format: {with: /\A\d{11}\z/, message: '-を付けずに11ケタ以内の数字で入力して下さい'}
     validates :ship_region_id, numericality: { other_than: 1, message: '選択して下さい'}
   end
 
