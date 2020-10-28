@@ -10,4 +10,10 @@ class OderAddress
     validates :phone, format: {with: ^0\d{9,10}$, message: '半角数字、又は-を付けて入力して下さい'}
     validates :ship_region_id, numericality: { other_than: 1 message: '選択して下さい'}
   end
+
+  def save
+    Order.create(user_id: current_user.id, item_id: params[:item_id])
+    Address.create(order_id: order.id, postal_code: postal_code, ship_region_id: ship_region_id, ship_city: ship_city,
+                   ship_block: ship_block, ship_building: ship_building, phone: phone)
+  end
 end
