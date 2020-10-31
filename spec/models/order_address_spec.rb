@@ -53,5 +53,9 @@ RSpec.describe OrderAddress, type: :model do
       @order_address.valid?
       expect(@order_address.errors.full_messages).to include('Token 入力された文字が空欄です')
     end
+    it '配送先の建物が空でも購入が出来る' do
+      @order_address.ship_building = ''
+      expect(@order_address).to be_valid
+    end
   end
 end

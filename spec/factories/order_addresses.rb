@@ -5,7 +5,7 @@ FactoryBot.define do
     ship_city          { '横浜市緑区' }
     ship_block         { '青山1-1-1' }
     ship_building      { '青山ビル' }
-    phone              { '090-1111-1111' }
+    phone              { '09011111111' }
     token              { 'tok_abcdefghijk00000000000000000' }
     association :order
   end
